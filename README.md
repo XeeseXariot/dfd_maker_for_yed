@@ -78,8 +78,8 @@ Cada flujo se representa mediante un hexágono conectado con una línea continua
 ## 📝 Preparación de Archivos CSV
 
 Prepara tus listas pensando "Quién envia Qué a Donde", así lo planifiqué.
- - `El panadero envió pan fresco a inventario de venta"`
-Respeta el formato ejemplo de la primera linea en los archivos o la herramienta no funcionará.
+  - `El panadero envió pan fresco a inventario de venta"`
+  - Respeta el formato ejemplo de la primera linea en los archivos o la herramienta no funcionará.
 
 La herramienta lee tres archivos CSV ubicados en el directorio `csv/`:
 
@@ -99,6 +99,9 @@ D1;"Nombre de Almacén de Datos"
 ### 2. `flujo.csv`
 Especifica las conexiones entre elementos.
 Indica el Nivel, Quien envia, a Donde envia y Qué envia.
+- Si hay varios envíos de un remitente y destino, lo ideal es separar dentro del mensaje con `;` para generar todos los envios en un único bloque de flujo.
+
+> **⚠️ Advertencia:** Evita usar `"Flujo1 - Flujo2"` ya que es reservado del python en este momento y podría producir problemas de formato. Pronto podría surgir una actualización que cambie como regula el script los envíos largos y múltiples, evitando este y otros errores.
 
 **Estructura:**
 ```csv
@@ -193,6 +196,8 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 ### Desarrollo asistido
 
 El archivo `csv2dfd_graphml.py` fue desarrollado con asistencia de **GitHub Copilot**, una herramienta de programación asistida por inteligencia artificial. El código resultante es producto de la colaboración entre el desarrollador humano y el asistente de IA.
+
+> **🔧 Estado del proyecto:** Debido a lo anterior, el código no ha sido depurado manualmente de forma exhaustiva. Este proyecto se encuentra actualmente en **estado alpha**. Permanece atento a futuras actualizaciones de este mensaje para conocer el avance hacia versiones estables.
 
 ---
 
