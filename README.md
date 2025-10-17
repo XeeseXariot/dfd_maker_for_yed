@@ -33,14 +33,15 @@ Lo que comenzó como una notación alternativa para mejorar la legibilidad evolu
 
 ```
 dfd_maker_for_yed/
-├── csv2dfd_graphml.py      # Script principal
+├── csv2dfd_graphml.py            # Script principal
 ├── csv/
-│   ├── entidades.csv       # Definición de elementos del DFD
-│   ├── flujo.csv           # Conexiones entre elementos
-│   └── formato.csv         # Estilos personalizados
+│   ├── entidades.csv             # Definición de elementos
+│   ├── flujo.csv                 # Conexiones entre elementos
+│   └── formato.csv               # Estilo personalizado
+├── GraphML/                      # Destino predefinido
 ├── images/
-│   └── ElementosDFD-Chariot.png # Imagen de ejemplo del formato
-└── README.md
+│   └── ElementosDFD-Chariot.png  # Ejemplo del formato
+└── README.md                     # El archivo que lees ahora
 ```
 
 ---
@@ -167,7 +168,7 @@ python3 csv2dfd_graphml.py --nivel 2 --modo full --output DFD-Nivel2.graphml
 3. Abrir el archivo GraphML generado en **yEd**
 4. Seleccionar todos los elementos (Ctrl+A)
 5. Ajustar tamaño de nodo a la etiqueta (Tools → Fit Node to Label) ya que la herramienta lo deja en tamaño estándar
-6. Aplicar un layout automático (Layout → Hierarchical o Organic) ya que la herramienta no asigna posiciones manipulables y sobrepone elementos
+6. Aplicar un layout automático (Layout → Hierarchical u Organic) ya que la herramienta no asigna posiciones manipulables y sobrepone elementos
 7. Realizar ajustes visuales finales
 8. Exportar a imagen (PNG, SVG, PDF) según necesidad
 
