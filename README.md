@@ -6,7 +6,7 @@ Herramienta para generar Diagramas de Flujo de Datos (DFD) en formato GraphML co
 
 ## 👤 Autor y Origen
 
-**Autor:** [Emmanuel Nicolás Velásquez Muñoz](https://github.com/CheeseChariot)  
+**Autor:** [Emmanuel Nicolás Velásquez Muñoz](https://github.com/XeeseXariot)  
 **Institución:** [Universidad de Magallanes](https://www.umag.cl)  
 **Departamento:** [Departamento de Ingeniería en Computación](https://dicumag.cl)  
 **Programa:** Ingeniería Civil en Computación e Informática  
